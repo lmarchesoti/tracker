@@ -30,7 +30,9 @@ module.exports = function(defaults) {
   // Create paths to bootstrap assets
   // Add assets to app with import
   app.import(app.bowerDirectory + '/jquery/dist/jquery.js');
-  app.import(app.bowerDirectory + '/bootstrap-sass/assets/javascripts/bootstrap.js');
+  // app.import(app.bowerDirectory + '/bootstrap-sass/assets/javascripts/bootstrap.js');
+  app.import(app.bowerDirectory + '/bootstrap-sass/assets/javascripts/bootstrap/collapse.js');
+  app.import(app.bowerDirectory + '/bootstrap-sass/assets/javascripts/bootstrap/transition.js');
 
   return app.toTree();
 };
