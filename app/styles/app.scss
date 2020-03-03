@@ -1,6 +1,9 @@
 // ----------------------------
 // bootstrap variable overrides
 // ----------------------------
-
+$navbar-default-bg: #fff;
+$navbar-border-radius: 20px;
+$navbar-padding-horizontal: 40px;
+$navbar-padding-vertical: 80px;
 // end bootstrap variable overrides
 @import 'bootstrap';
