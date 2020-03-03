@@ -2,7 +2,7 @@
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
-module.exports = function(defaults) {
+module.exports = function (defaults) {
 
   let bootstrapPath = 'bower_components/bootstrap-sass/assets/';
 
@@ -11,6 +11,9 @@ module.exports = function(defaults) {
       includePaths: [
         bootstrapPath + 'stylesheets'
       ]
+    },
+    'ember-font-awesome': {
+      useScss: true
     }
   });
 
