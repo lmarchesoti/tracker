@@ -7,6 +7,6 @@ export default class WitnessModel extends Model {
   @attr('string') email;
   @hasMany('sighting') sightings;
   @computed('fName', 'lName', function () {
-    return this.get('fName') + ' ' + this.get('lName');
+    return this.get('fName') + ' - ' + this.get('email');
   }) fullName;
 }
