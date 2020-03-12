@@ -4,7 +4,8 @@ export default class SightingsRoute extends Route {
   model() {
     let record1 = this.store.createRecord('sighting', {
       location: 'Atlanta',
-      sightedAt: new Date('2016-02-09')
+      sightedAt: new Date('2016-02-09'),
+      isNew: true
     });
     let record2 = this.store.createRecord('sighting', {
       location: 'Calloway',

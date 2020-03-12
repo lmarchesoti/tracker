@@ -6,4 +6,5 @@ export default class SightingModel extends Model {
   @attr('date') sightedAt;
   @belongsTo('cryptid') cryptid;
   @hasMany('witness') witness;
+  @attr('boolean', { defaultValue: false }) isNew;
 }
